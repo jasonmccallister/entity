@@ -20,7 +20,7 @@ type Session struct {
 func NewSession() (*Session, error) {
 	switch os.Getenv("APP_ENV") {
 	case "testing":
-		db, err := gorm.Open("sqlite", ":memory")
+		db, err := gorm.Open("sqlite3", ":memory")
 		if err != nil {
 			return nil, err
 		}
