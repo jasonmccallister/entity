@@ -6,7 +6,7 @@ import (
 
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
-	"github.com/traderinteractive/dct-entity/entity"
+	"github.com/themccallister/entity"
 )
 
 func TestCanGetAnInMemoryDatabaseBasedOnAppEnv(t *testing.T) {
